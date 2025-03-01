@@ -54,7 +54,7 @@
                             <img src="assets/checkbox.png" alt="">
                         </div>
                         <div class="flex justify-center items-center">
-                            <h1 class="lg:text-2xl text-xl font-semibold">23</h1>
+                            <h1 id="totalTask" class="lg:text-2xl text-xl font-semibold">23</h1>
                         </div>
                     </div>
                     <div>
@@ -102,8 +102,11 @@
                             <div class="flex justify-center items-center">
                                 <img src="assets/calender.png" alt="">
                             </div>
-                            <div class="flex justify-center items-center">
-                                <h1>Date 23 01 2024</h1>
+                            <div>
+                                <h1 class="font-semibold" id="nameOfDay"></h1>
+                                <div class="flex justify-center items-center">
+                                    <h1 class="font-bold" id="nowDate"></h1>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -153,10 +156,10 @@
                     </div>
                     <div class="space-y-4 bg-slate-200 p-2 rounded-lg">
                         <div class="">
-                            <span class="bg-slate-50  title px-4 rounded-md">SwiftPay</span>
+                            <span class="bg-slate-50   px-4 rounded-md">SwiftPay</span>
 
                         </div>
-                        <h1><span class="bg-slate-50 px-4 py-2 rounded-md">Optimize Home Page</span></h1>
+                        <h1><span class="bg-slate-50 title px-4 py-2 rounded-md">Optimize Home Page</span></h1>
                         <div id="text-div" class="flex justify-center items-center white-colour rounded-lg mx-1 py-3">
                             <h1 class="px-1 text-gray-500"> Debug using Chrome DevTools, check for overlapping elements
                                 and ensure onClick works .....</h1>
@@ -236,7 +239,7 @@
             </div>
 
             <!-- Task History -->
-            <div class="lg:col-span-2 col-span-4  white-colour rounded-lg mt-4 lg:ml-0">
+            <div class="lg:col-span-2 col-span-4  white-colour rounded-lg mt-4 lg:mt-0 lg:ml-0">
                 <div class="">
                     <div class="flex flex-col lg:gap-4 gap-2">
                         <div class="flex justify-center items-center lg:pt-10 pt-4">
@@ -249,11 +252,11 @@
 
                         </div>
                         <div class="flex justify-center items-center">
-                            <button class="btn lg:px-14 px-18 btn-active bg-[#3752FD] text-white">Primary</button>
+                            <button id="clearHistory" class="btn lg:px-14 px-18 btn-active bg-[#3752FD] text-white">clear History</button>
                         </div>
                     </div>
 
-                    <div class="lg:pt-5 pt-2 lg:px-4 m-1 lg:m-0 ">
+                    <div class="lg:pt-5  pt-2 lg:px-4 m-1 lg:m-0" id="taskCompletedBox">
                         <div class="bg-slate-200 hidden  rounded-lg mx-2  p-2" id="taskCompletedBox">
                             
                         </div>
