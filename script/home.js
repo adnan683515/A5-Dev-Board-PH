@@ -1,7 +1,7 @@
 const buttonGroup = document.getElementsByClassName('completed')
 const titleGroup = document.getElementsByClassName('title')
 document.getElementById('taskCount').innerText = '0' + titleGroup.length;
-const specificDate = new Date(2025, 2, 1);
+const specificDate = new Date();
 const month = specificDate.getMonth() + 1;
 const day = specificDate.getDate();
 const year = specificDate.getFullYear();
