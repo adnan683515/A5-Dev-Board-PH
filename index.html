@@ -26,15 +26,19 @@
         .white-colour {
             background-color: #FFFFFF;
         }
+
+        .bule-colour {
+            background-color: #3752FD;
+        }
     </style>
 </head>
 
 <body class="bg-blue-50 poppins">
 
-    <header>
+    <header class="lg:max-w-[90%] max-w-[95%] m-auto">
 
         <nav class="py-3">
-            <div class="navbar lg:max-w-[90%] max-w-[95%] white-colour  rounded-md m-auto bg-base-100 shadow-sm">
+            <div class="navbar   rounded-md bg-base-100 shadow-sm">
                 <div class="flex-1 justify-center items-center">
                     <div class="flex">
                         <div>
@@ -61,15 +65,16 @@
         </nav>
 
     </header>
-    <main class="lg:max-w-[90%] max-w-[95%] m-auto bg-blue-50">
+    <main class="lg:max-w-[90%] max-w-[100%] px-2 py-4 lg:px-0 m-auto bg-blue-50">
 
-        <div class="grid grid-cols-6 my-4 gap-2">
+        <div class="grid  lg:grid-cols-6 my-4 gap-2">
 
 
-            <div class="col-span-4 ">
+            <div class="col-span-4 white-colour p-3 rounded-lg">
 
-                <div class="grid grid-cols-4 gap-2">
-                    <div class="flex white-colour shadow-sm rounded-lg justify-center items-center">
+                <div class="grid lg:grid-cols-4 gap-2">
+                    <div
+                        class="flex col-span-4 lg:col-span-1 py-4 lg:py-0 bg-slate-100 rounded-lg justify-center items-center">
                         <div class="flex   gap-4">
                             <div class="flex justify-center items-center"><img src="assets/checkbox.png" alt=""></div>
                             <div class="flex flex-col gap-0">
@@ -80,7 +85,7 @@
                     </div>
 
                     <div
-                        class="flex rounded-lg bg-gradient-to-r from-[#3752FD] from-10% via-[#6C7FFA] col-span-2 via-30% to-[#9BA8F8] to-90%    justify-center items-center">
+                        class="flex lg:col-span-2  rounded-lg bg-gradient-to-r from-[#3752FD] from-10% via-[#6C7FFA] col-span-4 via-30% to-[#9BA8F8] to-90%    justify-center items-center">
                         <div class="flex gap-10  py-4">
                             <div class="flex justify-start items-center">
                                 <img src="assets/board.png" alt="">
@@ -91,7 +96,8 @@
                         </div>
                     </div>
 
-                    <div class="flex  white-colour shadow-sm rounded-lg  justify-center items-center">
+                    <div
+                        class="flex col-span-4 lg:col-span-1 py-3 lg:py-0  bg-slate-100  rounded-lg  justify-center items-center">
                         <div class="flex gap-4">
                             <div class="flex justify-center items-center">
                                 <img src="assets/calender.png" alt="">
@@ -104,35 +110,164 @@
 
                 </div>
 
+                <div class="grid lg:grid-cols-3 my-3 gap-5">
+                    <div class="space-y-4 bg-slate-200 p-2 rounded-lg">
+                        <div class="">
+                            <span class="bg-slate-50  px-4 rounded-md">ShopeEase</span>
+
+                        </div>
+                        <h1><span class="bg-slate-50 px-4 py-2 rounded-md">Fix Mobile Button issue</span></h1>
+                        <div id="text-div" class="flex justify-center items-center white-colour rounded-lg mx-1 py-3">
+                            <h1 class="px-1 text-gray-500"> Debug using Chrome DevTools, check for overlapping elements
+                                and ensure onClick works .....</h1>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="space-y-1">
+                                <h1>Deadline</h1>
+                                <h1>21 March 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn  completed bg-[#3752FD] text-white">completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4 bg-slate-200 p-2 rounded-lg">
+                        <div class="">
+                            <span class="bg-slate-50  px-4 rounded-md">CloudSync</span>
+
+                        </div>
+                        <h1><span class="bg-slate-50 px-4 py-2 rounded-md">Add Dark Mode</span></h1>
+                        <div id="text-div" class="flex justify-center items-center white-colour rounded-lg mx-1 py-3">
+                            <h1 class="px-1 text-gray-500"> Debug using Chrome DevTools, check for overlapping elements
+                                and ensure onClick works .....</h1>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="space-y-1">
+                                <h1>Deadline</h1>
+                                <h1>21 March 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn completed  bg-[#3752FD] text-white">completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4 bg-slate-200 p-2 rounded-lg">
+                        <div class="">
+                            <span class="bg-slate-50  px-4 rounded-md">SwiftPay</span>
+
+                        </div>
+                        <h1><span class="bg-slate-50 px-4 py-2 rounded-md">Optimize Home Page</span></h1>
+                        <div id="text-div" class="flex justify-center items-center white-colour rounded-lg mx-1 py-3">
+                            <h1 class="px-1 text-gray-500"> Debug using Chrome DevTools, check for overlapping elements
+                                and ensure onClick works .....</h1>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="space-y-1">
+                                <h1>Deadline</h1>
+                                <h1>21 March 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn completed  bg-[#3752FD] text-white">completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4 bg-slate-200 p-2 rounded-lg">
+                        <div class="">
+                            <span class="bg-slate-50  px-4 rounded-md">Meta</span>
+
+                        </div>
+                        <h1><span class="bg-slate-50 px-4 py-2 rounded-md">Add new Emoji</span></h1>
+                        <div id="text-div" class="flex justify-center items-center white-colour rounded-lg mx-1 py-3">
+                            <h1 class="px-1 text-gray-500"> Debug using Chrome DevTools, check for overlapping elements
+                                and ensure onClick works .....</h1>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="space-y-1">
+                                <h1>Deadline</h1>
+                                <h1>21 March 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn  completed bg-[#3752FD] text-white">completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4 bg-slate-200 p-2 rounded-lg">
+                        <div class="">
+                            <span class="bg-slate-50  px-4 rounded-md">Google uc</span>
+
+                        </div>
+                        <h1><span class="bg-slate-50 px-4 py-2 rounded-md">Intregrate Open AI API</span></h1>
+                        <div id="text-div" class="flex justify-center items-center white-colour rounded-lg mx-1 py-3">
+                            <h1 class="px-1 text-gray-500"> Debug using Chrome DevTools, check for overlapping elements
+                                and ensure onClick works .....</h1>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="space-y-1">
+                                <h1>Deadline</h1>
+                                <h1>21 March 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn completed  bg-[#3752FD] text-white">completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4 bg-slate-200 p-2 rounded-lg">
+                        <div class="">
+                            <span class="bg-slate-50  px-4 rounded-md">Glassdoor</span>
+
+                        </div>
+                        <h1><span class="bg-slate-50 px-4 py-2 rounded-md">Improve Job Searching</span></h1>
+                        <div id="text-div" class="flex justify-center items-center white-colour rounded-lg mx-1 py-3">
+                            <h1 class="px-1 text-gray-500"> Debug using Chrome DevTools, check for overlapping elements
+                                and ensure onClick works .....</h1>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="space-y-1">
+                                <h1>Deadline</h1>
+                                <h1>21 March 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn  completed bg-[#3752FD] text-white">completed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Task History -->
-            <div class="col-span-2 white-colour rounded-lg">
-
-                <div>
-                    <div class="flex flex-col gap-4">
-                        <div class="flex justify-center items-center pt-10">
-                            <div class="flex gap-2">
+            <div class="lg:col-span-2 col-span-4  white-colour rounded-lg mt-4 lg:ml-0">
+                <div class="">
+                    <div class="flex flex-col lg:gap-4 gap-2">
+                        <div class="flex justify-center items-center lg:pt-10 pt-4">
+                            <div class="flex gap-4">
                                 <div>
                                     <i class="fa-solid fa-clock-rotate-left fa-xl"></i>
                                 </div>
                                 <h1>Activiy Log</h1>
                             </div>
-    
+
                         </div>
                         <div class="flex justify-center items-center">
-                            <button class="btn px-14 btn-active btn-primary">Primary</button>
+                            <button class="btn lg:px-14 px-18 btn-active bg-[#3752FD] text-white">Primary</button>
                         </div>
                     </div>
 
-                    <div>
-                        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aut.</h1>
+                    <div class="lg:pt-5 pt-2 lg:px-4 m-1 lg:m-0 ">
+                        <div class="bg-slate-200 rounded-lg m-2 p-2">
+                            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aut.</h1>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
+
+
     </main>
+
+
+    <script src="script/home.js"></script>
 </body>
 
 </html>
