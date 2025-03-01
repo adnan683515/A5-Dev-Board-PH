@@ -9,13 +9,13 @@ const days = [
     'SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'
 ];
 const WeeKDays = days[specificDate.getDay()];
-document.getElementById('nameOfDay').innerText=WeeKDays;
+document.getElementById('nameOfDay').innerText = WeeKDays;
 const monthNames = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
 ];
-const TodayTime = `${monthNames[month-1]}  ${day}, ${year}`;
-document.getElementById('nowDate').innerText=TodayTime;
+const TodayTime = `${monthNames[month - 1]}  ${day}, ${year}`;
+document.getElementById('nowDate').innerText = TodayTime;
 
 for (let i = 0; i < buttonGroup.length; i++) {
     const btn = buttonGroup[i];
@@ -53,3 +53,20 @@ document.getElementById('clearHistory').addEventListener('click', function () {
     document.getElementById('taskCompletedBox').innerHTML = ""
 
 })
+
+
+document.getElementById('colour-btn-cng').addEventListener('click', function () {
+
+
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+
+    document.getElementById('fullBody').style.background=color;
+
+
+
+})
+
